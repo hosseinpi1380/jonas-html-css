@@ -1,0 +1,12 @@
+.section-about{
+    background-color: $color-light-gray-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+    .row{
+        width: 80vw;
+        margin: auto;
+       
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

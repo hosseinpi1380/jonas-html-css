@@ -5,6 +5,7 @@ light green : #7ed56f,
 medium green:#55c57a,
 dark green: #28b485 
 */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Great+Vibes&family=Josefin+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,40 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 30px;
+}
+
+html {
+  font-size: 64.5%;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -101,8 +136,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6745098039), rgba(40, 180, 133, 0.7215686275)), url(/img/hero.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 }
 .header__logo-box {
@@ -207,4 +242,86 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+}
+
+/* 
+colors:
+light green : #7ed56f,
+medium green:#55c57a,
+dark green: #28b485 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+html {
+  font-size: 64.5%;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 6rem;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+.section-about .row {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=main.css.map */

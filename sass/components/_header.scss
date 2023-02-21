@@ -17,7 +17,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
         border-radius: 50%;
     }
 
@@ -46,9 +45,6 @@
         text-align: center;
         margin-bottom: 60px;
 
-
-
-
         &--main {
             font-size: 60px;
             font-weight: 400;
@@ -68,61 +64,57 @@
             animation-duration: 3s;
             color: white;
         }
+    };
 
-    }
+    
 
-
-
-    .btn:link,
-    .btn:visited {
+    .btn {
+        border-radius: 30px;
         text-transform: uppercase;
         text-decoration: none;
         padding: 10px 40px;
-        display: inline-block;
-        border-radius: 100px;
-        transition: all .2s;
-        position: relative;
-    }
 
-    .btn--white {
-        background-color: #fff;
+        &::link,
+        &::visited {
+            display: inline-block;
+            transition: all .2s;
+            position: relative;
+        };
 
-        color: #777;
-        animation-name: moveBottomToTop;
-        animation-duration: 3s;
-        animation-delay: .75s;
-        animation-fill-mode: backwards;
-    }
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px 10px rgba(0, 0, 0, .2); 
+        };
 
-    .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px 10px rgba(0, 0, 0, .2);
-    }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        };
 
-    .btn:active {
-        transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    }
+        &--white {
+            margin-top: 6rem;
+            background-color: #fff;
+            color: #777;
+            animation-name: moveBottomToTop;
+            animation-duration: 3s;
+            animation-delay: .75s;
+            animation-fill-mode: backwards;
+            padding: 10px 40px;
+        };
 
-    .btn::after {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
+        
 
-    .btn--white::after {
-        background-color: #fff;
-    }
-
-    .btn:hover::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
     }
 }

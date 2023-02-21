@@ -163,17 +163,27 @@ body {
           animation-duration: 3s;
   color: white;
 }
-.header .btn:link,
-.header .btn:visited {
+.header .btn {
+  border-radius: 30px;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 40px;
+}
+.header .btn::link, .header .btn::visited {
   display: inline-block;
-  border-radius: 100px;
   transition: all 0.2s;
   position: relative;
 }
+.header .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.header .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 .header .btn--white {
+  margin-top: 6rem;
   background-color: #fff;
   color: #777;
   -webkit-animation-name: moveBottomToTop;
@@ -184,14 +194,7 @@ body {
           animation-delay: 0.75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-}
-.header .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
-}
-.header .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 40px;
 }
 .header .btn::after {
   content: "";
@@ -204,11 +207,4 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
-.header .btn--white::after {
-  background-color: #fff;
-}
-.header .btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

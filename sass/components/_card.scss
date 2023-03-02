@@ -1,0 +1,89 @@
+.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid black;
+    &__front-desc{
+        ul{
+
+            height: 150px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            font-size: 1.5rem;
+            li{
+                border-bottom: 2px solid rgba(black , .5);
+                width: 50%;
+            }
+        }
+    }
+    &:hover .card__front{
+        transform: rotateY(180deg);
+    }
+    &:hover .card__back{
+        transform: rotateY(0);
+    }
+    &__front {
+        backface-visibility: hidden;
+
+        position: absolute;
+        transition: all .4s;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        
+
+        &-img {
+            width: 100%;
+            height: 40%;
+            background-position: center;
+            background-size: cover;
+
+            &-1 {
+                background-image: url(/img/nat-6.jpg);
+
+                
+            }
+            &-2{
+                background-image: url(/img/nat-7.jpg);
+            }
+            &-3{
+                background-image: url(/img/nat-8.jpg);
+            }
+        }
+
+    }
+
+    &__back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+        top: 0;
+        right: 0;
+        // background-image: linear-gradient(to right bottom, yellow, orange);
+        transition: all .4s;
+        &-1{
+            background-image: linear-gradient(to right bottom , #8e2de2, #4a00e0);
+        }
+        &-2{
+            background-image: linear-gradient(to right bottom , 	#DECBA4, #3E5151);
+        }
+       &-3{
+            background-image: linear-gradient(to right bottom , 	#122b3e, 	#1c1d22);
+       }
+    }
+
+}

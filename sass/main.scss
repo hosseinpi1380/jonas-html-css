@@ -5,13 +5,21 @@
 @import 'abstracts/mixin';
 @import 'abstracts/keyframes';
 @import 'abstracts/variable';
+@import 'abstracts/mediaQueries';
 
 @import 'layout/header';
-@import 'layout/section';
+// @import 'layout/section';
 
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utility';
 
 
+@import 'components/btn';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/card';
+
 @import 'pages/home';
+
+@import 'layout/section-feature';

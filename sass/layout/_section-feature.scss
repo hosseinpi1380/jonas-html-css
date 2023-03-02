@@ -1,0 +1,16 @@
+
+.section-features{
+    background-image: linear-gradient(to right bottom , rgba($color-primary,.5),rgba($color-primary-ligth,.8) ),
+    url(/img/nat-4.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    clip-path:polygon(0 20%, 100% 0, 100% 80%, 0 100%) ;
+    color: $color-black;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+    
+}
